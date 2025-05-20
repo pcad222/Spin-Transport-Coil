@@ -1,18 +1,22 @@
-# Spin-Transport-Coil
-Spin transport coil are designed to transport neutrons adiabatically inside the neutron guide. 
-# Spin-Transport-Coil
+# Spin Transport Coil
 
-Spin transport coils are designed to guide neutron spin adiabatically along the neutron guide in nEDM experiments.
+Spin transport coils are designed to guide neutron spin **adiabatically** through a magnetic field inside a neutron guide. This is essential for preserving spin polarization in nEDM experiments.
 
-## 📌 Motivation
-Precise spin transport is essential to maintain neutron polarization in sensitive regions such as the precession chamber.
+## Motivation
+Accurate spin transport ensures that neutrons retain their polarization during transport, critical for experiments involving magnetic resonance or EDM measurements.
 
-## ⚙️ Features
-- Adiabatic transport coil design
-- Field simulation and validation
-- Modular code for field mapping, visualization, and optimization
+## ⚙ Features
+- Coil field modeling and visualization
+- Adiabatic transport design principles
+- Biot–Savart simulation and gradient computation
+- Physics-informed optimization (PINNs optional)
 
-## 🧠 Physics Background
-- Based on adiabatic spin transport principles
-- Uses Biot–Savart law / numerical simulations
-- Aligns with Maxwell's equations: ∇·B = 0, ∇×B = μ₀J
+##  Physics Background
+The transport relies on magnetic field configurations that change slowly in space:
+- Satisfies:  
+  \[
+  \nabla \cdot \vec{B} = 0 \quad \text{and} \quad \vec{B} \cdot \frac{d\vec{S}}{dt} = 0 \text{ (adiabatic condition)}
+  \]
+- Tools: Biot–Savart law, Maxwell's equations, Runge–Kutta trajectory simulation
+
+## 🗂️ Project Structure
