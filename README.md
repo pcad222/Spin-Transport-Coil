@@ -5,7 +5,7 @@ Spin transport coils are designed to guide neutron spin **adiabatically** throug
 ## Motivation
 Accurate spin transport ensures that neutrons retain their polarization during transport, critical for experiments involving magnetic resonance or EDM measurements.
 
-## ⚙ Features
+##  Features
 - Coil field modeling and visualization
 - Adiabatic transport design principles
 - Biot–Savart simulation and gradient computation
@@ -13,10 +13,6 @@ Accurate spin transport ensures that neutrons retain their polarization during t
 
 ##  Physics Background
 The transport relies on magnetic field configurations that change slowly in space:
-- Satisfies:  
-  \[
-  \nabla \cdot \vec{B} = 0 \quad \text{and} \quad \vec{B} \cdot \frac{d\vec{S}}{dt} = 0 \text{ (adiabatic condition)}
-  \]
-- Tools: Biot–Savart law, Maxwell's equations, Runge–Kutta trajectory simulation
+
 
 ## 🗂️ Project Structure
